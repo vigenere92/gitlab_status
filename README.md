@@ -1,3 +1,5 @@
+gitlab_status is a Ruby cli to check the average response time of https://www.gitlab.com spread over 10s for 1 minute.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -15,7 +17,7 @@ Or install it yourself as:
     $ gem install gitlab_status
 
 ## Usage
-You can use gitlab_status with -v, --verbose to get individual response times.
+You can use gitlab_status with -v, --verbose to get individual response times for each request as well.
 ```
 gitlab_status -v
 ```
