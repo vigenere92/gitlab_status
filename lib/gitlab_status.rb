@@ -7,7 +7,12 @@ module GitlabStatus
 
   class Probe
 
+    # ==== Params
+    # +site_url+ - Site to probe
+    # +probe_interval+ - Time between each probe request
+    # +total_probe_time+ - Total number of times to probe the site
     def initialize(site_url, probe_interval, total_probe_time)
+      # pass the arguments passed via CLI to Cliparser
       parsed_args = GitlabStatus::CliParser.parse(ARGV)
       @verbose = parsed_args[:verbose]
       @probe_interval = probe_interval

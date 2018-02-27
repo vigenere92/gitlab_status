@@ -3,6 +3,8 @@ module GitlabStatus
 
   class CliParser
 
+    # ==== Params
+    # +args+ - Arguments to parse
     def self.parse(args)
       options = {}
 
