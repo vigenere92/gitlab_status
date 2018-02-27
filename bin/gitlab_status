@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'gitlab_status'
+
+probe = GitlabStatus::Probe.new("https://www.gitlab.com", 10, 6)
+probe.start
