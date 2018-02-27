@@ -23,7 +23,13 @@ module GitlabStatus
         end
       end
 
-      opts.parse!(args)
+      begin
+        opts.parse!(args)
+      rescue OptionParser::InvalidOption
+        puts "Invalid option"
+        exit
+      end
+
       options
     end
 
