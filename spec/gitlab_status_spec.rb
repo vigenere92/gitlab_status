@@ -11,6 +11,7 @@ end
 RSpec.describe GitlabStatus::Probe do
 
   before(:all) do
+    ARGV = []
     @probe = GitlabStatus::Probe.new('https://www.gitlab.com', 10, 6)
   end
 
